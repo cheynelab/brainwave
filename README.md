@@ -1,4 +1,4 @@
-# brainwave
+# BrainWave SOFTWARE
 Current and archived versions of our MEG analysis MATLAB-based toolbox, BrainWave, created by Douglas Cheyne and contributors.
 
 **BrainWave** is a user-friendly, MATLAB-based GUI for the computation  of beamformer source images from magnetoencephalography (MEG) neuroimaging data. 
