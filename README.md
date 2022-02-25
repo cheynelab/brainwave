@@ -1,10 +1,10 @@
 # brainwave
 Current and archived versions of our MEG analysis MATLAB-based toolbox, BrainWave, created by Douglas Cheyne and contributors.
 
-BrainWave is a user-friendly, MATLAB-based GUI for the computation  of beamformer source images from magnetoencephalography (MEG) neuroimaging data. 
+**BrainWave** is a user-friendly, MATLAB-based GUI for the computation  of beamformer source images from magnetoencephalography (MEG) neuroimaging data. 
 It has integrated 4-dimensional image sequences and simple point-and-click waveform plotting as well as time-frequency analyses. 
 
-SOFTWARE REQUIREMENTS
+**SOFTWARE REQUIREMENTS**
 BrainWave has been tested on Linux (Ubuntu 16+, CentOS 6.0+), Mac (10.6+), and Windows (7 and 10) Operating Systems. It uses compiled C-mex functions for optimization and efficient handling of MEG data. It also uses multi-threaded libraries for fast computation of beamformer images, workstations with multiple core
 processors are recommended, with at least 4 GB of RAM. MATLAB 2014b or higher is required. No custom toolboxes are required to run most BrainWave features (with
 the exception of hilbert transform analysis which requires the MATLAB Signal Processing Toolbox). For spatial normalization and group analysis, it is necessary to 
@@ -21,7 +21,7 @@ CIVET: http://www.bic.mni.mcgill.ca/ServicesSoftware/CIVET
 FreeSurfer: https://surfer.nmr.mgh.harvard.edu/
 
 
-BrainWave INSTALLATION
+**BrainWave INSTALLATION**
 1. Download the latest version of BrainWave software.
 2. Unzip the downloaded folder and save it to a safe location on your computer.
 3. Open MATLAB and add the path to the BrainWave folder.
@@ -29,11 +29,11 @@ BrainWave INSTALLATION
 5. In MATLAB command window, type: >> brainwave 
 
 
-BrainWave SUPPORT
+**BrainWave SUPPORT**
 Have you come across an issue while running BrainWave? We can help!
 Feel free to email us your questions and comments at any time. We'd be happy to hear from you! 
 Visit our website contacts page https://cheynelab.utoronto.ca/contact
 
 
-DISCLAIMER & LICENSE
-This software package was developed by Dr. Douglas Cheyne and other contributors at the Toronto Hospital for Sick Children with support from the Ontario Brain Institute (OBI), Canadian Institutes of Health Research (CIHR) and the Natural Sciences and Engineering Research Council of Canada (NSERC). This program is made available at no cost to the research community. It is to be utilized for RESEARCH PURPOSES ONLY, and has not been approved for clinical use. Distribution of BrainWave is not permitted without permission by the developer and does not hold any warranty. Errors encountered using the program may be reported to the developer
+**DISCLAIMER & LICENSE**
+This software package was developed by Dr. Douglas Cheyne and other contributors at the Toronto Hospital for Sick Children with support from the Ontario Brain Institute (OBI), Canadian Institutes of Health Research (CIHR) and the Natural Sciences and Engineering Research Council of Canada (NSERC). This program is made available at no cost to the research community. It is to be utilized for **RESEARCH PURPOSES ONLY, and has not been approved for clinical use.** Distribution of BrainWave is not permitted without permission by the developer and does not hold any warranty. Errors encountered using the program may be reported to the developer
