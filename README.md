@@ -1,4 +1,4 @@
-# BrainWave SOFTWARE
+# ![BW_logo](https://user-images.githubusercontent.com/15018908/156004051-a2d175f6-8e20-4fba-9084-0e1838c05bc0.png) BrainWave SOFTWARE
 Current and archived versions of our MEG analysis MATLAB-based toolbox, BrainWave, created by Douglas Cheyne and contributors.
 
 **BrainWave** is a user-friendly, MATLAB-based GUI for the computation  of beamformer source images from magnetoencephalography (MEG) neuroimaging data. 
@@ -7,7 +7,8 @@ It has integrated 4-dimensional image sequences and simple point-and-click wavef
 **SOFTWARE REQUIREMENTS**
 BrainWave has been tested on Linux (Ubuntu 16+, CentOS 6.0+), Mac (10.6+), and Windows (7 and 10) Operating Systems. It uses compiled C-mex functions for optimization and efficient handling of MEG data. It also uses multi-threaded libraries for fast computation of beamformer images, workstations with multiple core
 processors are recommended, with at least 4 GB of RAM. MATLAB 2014b or higher is required. No custom toolboxes are required to run most BrainWave features (with
-the exception of hilbert transform analysis which requires the MATLAB Signal Processing Toolbox). For spatial normalization and group analysis, it is necessary to 
+the exception of 
+hilbert transform analysis which requires the MATLAB Signal Processing Toolbox). For spatial normalization and group analysis, it is necessary to 
 install the most recent version of the Statistical Parametric Mapping (SPM) Matlab toolbox (SPM8 or SPM12) available from the Welcome Trust Centre for
 Neuroimaging, UCL, London. For the extraction of surfaces from MRI images we recommend also installing the University of Oxford's FMRIB Software Library (FSL, 
 version 5.0 or newer) Toolbox, which is available for various OS platforms. BrainWave works natively with the CTF Systems MEG data format (.ds files), however the
