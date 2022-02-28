@@ -1,4 +1,4 @@
-![BW_logo_small](https://user-images.githubusercontent.com/15018908/156004784-f3533ea2-fbfd-4a5d-a9da-e076c4b0052c.png)#  BrainWave SOFTWARE 
+# ![BW_logo_small](https://user-images.githubusercontent.com/15018908/156004784-f3533ea2-fbfd-4a5d-a9da-e076c4b0052c.png)  BrainWave SOFTWARE 
 Current and archived versions of our MEG analysis MATLAB-based toolbox, BrainWave, created by Douglas Cheyne and contributors.
 
 **BrainWave** is a user-friendly, MATLAB-based GUI for the computation  of beamformer source images from magnetoencephalography (MEG) neuroimaging data. 
@@ -40,4 +40,5 @@ Visit our website contacts page https://cheynelab.utoronto.ca/contact
 
 
 **DISCLAIMER & LICENSE**
+
 This software package was developed by Dr. Douglas Cheyne and other contributors at the Toronto Hospital for Sick Children with support from the Ontario Brain Institute (OBI), Canadian Institutes of Health Research (CIHR) and the Natural Sciences and Engineering Research Council of Canada (NSERC). This program is made available at no cost to the research community. It is to be utilized for **RESEARCH PURPOSES ONLY, and has not been approved for clinical use.** Distribution of BrainWave is not permitted without permission by the developer and does not hold any warranty. Errors encountered using the program may be reported to the developer
