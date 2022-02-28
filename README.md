@@ -1,11 +1,11 @@
-#  BrainWave SOFTWARE ![BW_logo_small](https://user-images.githubusercontent.com/15018908/156004784-f3533ea2-fbfd-4a5d-a9da-e076c4b0052c.png)
-Current and archived versions of our MEG analysis MATLAB-based toolbox, BrainWave, created by Douglas Cheyne and con
-tributors.
+![BW_logo_small](https://user-images.githubusercontent.com/15018908/156004784-f3533ea2-fbfd-4a5d-a9da-e076c4b0052c.png)#  BrainWave SOFTWARE 
+Current and archived versions of our MEG analysis MATLAB-based toolbox, BrainWave, created by Douglas Cheyne and contributors.
 
 **BrainWave** is a user-friendly, MATLAB-based GUI for the computation  of beamformer source images from magnetoencephalography (MEG) neuroimaging data. 
 It has integrated 4-dimensional image sequences and simple point-and-click waveform plotting as well as time-frequency analyses. 
 
 **SOFTWARE REQUIREMENTS**
+
 BrainWave has been tested on Linux (Ubuntu 16+, CentOS 6.0+), Mac (10.6+), and Windows (7 and 10) Operating Systems. It uses compiled C-mex functions for optimization and efficient handling of MEG data. It also uses multi-threaded libraries for fast computation of beamformer images, workstations with multiple core
 processors are recommended, with at least 4 GB of RAM. MATLAB 2014b or higher is required. No custom toolboxes are required to run most BrainWave features (with
 the exception of 
@@ -24,6 +24,7 @@ FreeSurfer: https://surfer.nmr.mgh.harvard.edu/
 
 
 **BrainWave INSTALLATION**
+
 1. Download the latest version of BrainWave software.
 2. Unzip the downloaded folder and save it to a safe location on your computer.
 3. Open MATLAB and add the path to the BrainWave folder.
@@ -32,6 +33,7 @@ FreeSurfer: https://surfer.nmr.mgh.harvard.edu/
 
 
 **BrainWave SUPPORT**
+
 Have you come across an issue while running BrainWave? We can help!
 Feel free to email us your questions and comments at any time. We'd be happy to hear from you! 
 Visit our website contacts page https://cheynelab.utoronto.ca/contact
