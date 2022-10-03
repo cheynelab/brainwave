@@ -1,0 +1,10 @@
+SIM_FILE_VER_2
+//     index	xpos(cm)	ypos(cm)	zpos(cm)	xo		yo		zo		Q (nAm)
+Dipoles
+{
+}
+
+//	    index	frequency(Hz)	onset(s)	duration(s)	onset jitter(s)	amp. jitter(percent)	type
+Params
+{
+}
