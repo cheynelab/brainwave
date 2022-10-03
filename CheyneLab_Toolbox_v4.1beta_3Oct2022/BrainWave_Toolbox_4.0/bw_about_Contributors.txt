@@ -1,0 +1,10 @@
+Written by Douglas Cheyne, PhD   
+
+Additional contributors (in alphabetical order):  Sonya Bells, Andreea Bostan, Wilken Chau, Zhengkai Chen, Teresa Cheung, Paul Ferrari, Tony Herdman, Cecilia Jobst, Marc Lalancette, Brad Moores, Merron Woodbury, Maher Quraan, Natascha van Lieshout.
+
+Wavelet transform adapted from Ole Jensen's 4DToolbox. NIfTI file scripts from Jimmy Shen, Rotman Research Institute. Talairach database from http://www.talairach.org. Topoplot routines from Colin Humphries & Scott Makeig, CNL / Salk Institute, SPM - Welcome Trust Centre for NeuroImaging, Institute of Neurology, University College of London
+  
+BrainWave logo by Natasha van Lieshout
+
+(c) 2010-2014, Douglas O. Cheyne, PhD, All rights reserved.
+
