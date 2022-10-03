@@ -1,0 +1,86 @@
+# new makefile for compiling BW mex functions locally
+# requires current copies of ctflib.o and bwlib.o in parent directory
+
+CTF_LIB = .
+BW_LIB = .
+
+# updated Nov, 2016 for compilation on VM
+
+# compilation for windows - needs updating - compiled separately??
+mex_win64 = C:\Program Files\MATLAB\R2011a\bin\mex
+
+# Matlab compiler version on Mac - uses libraries compiled with llvm 5.1 on Yosemite 
+mex_mac64 = /Applications/MATLAB_R2013b.app/bin/mex
+
+# Matlab compiler for CentOS 6.0 on VMware 
+mex_linux = /usr/local/MATLAB/R2014b/bin/mex
+
+Win64:
+	$(mex_win64) bw_geom2res4.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFGetParams.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFGetHeader.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFGetSensors.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFGetChannelData.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFGetChannelLabels.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFEpochDs.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_CTFChangeHeadPos.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_getCTFData.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_filter.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_combineDs.cc $(CTF_LIB)/ctflib_win64.o
+	$(mex_win64) bw_kit2res4.cc $(CTF_LIB)/ctflib_win64.o
+
+	$(mex_win64) bw_CTFGetAverage.cc $(CTF_LIB)/ctflib_win64.o $(BW_LIB)/bwlib_win64.o
+	$(mex_win64) bw_makeVS.cc $(CTF_LIB)/ctflib_win64.o $(BW_LIB)/bwlib_win64.o
+	$(mex_win64) bw_makeEventRelated.cc $(CTF_LIB)/ctflib_win64.o $(BW_LIB)/bwlib_win64.o
+	$(mex_win64) bw_makeDifferential.cc $(CTF_LIB)/ctflib_win64.o $(BW_LIB)/bwlib_win64.o
+	$(mex_win64) bw_computeFaceNormals.cc
+	$(mex_win64) trilinear.cpp
+	$(mex_win64) bw_CTFWriteMRI.cc
+    
+linux64:
+	$(mex_linux) bw_geom2res4.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFGetParams.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFGetHeader.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFGetSensors.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFGetChannelData.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFGetChannelLabels.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFEpochDs.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_CTFChangeHeadPos.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_getCTFData.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_filter.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_combineDs.cc $(CTF_LIB)/ctflib_glx64.o
+	$(mex_linux) bw_kit2res4.cc $(CTF_LIB)/ctflib_glx64.o
+	
+	$(mex_linux) bw_CTFGetAverage.cc $(CTF_LIB)/ctflib_glx64.o $(BW_LIB)/bwlib_glx64.o
+	$(mex_linux) bw_makeVS.cc $(CTF_LIB)/ctflib_glx64.o $(BW_LIB)/bwlib_glx64.o
+	$(mex_linux) bw_makeEventRelated.cc $(CTF_LIB)/ctflib_glx64.o $(BW_LIB)/bwlib_glx64.o
+	$(mex_linux) bw_makeDifferential.cc $(CTF_LIB)/ctflib_glx64.o $(BW_LIB)/bwlib_glx64.o
+	$(mex_linux) bw_computeFaceNormals.cc
+	$(mex_linux) trilinear.cpp
+	$(mex_linux) bw_CTFWriteMRI.cc
+	mv *.mexa64* ../
+
+imac64:
+	$(mex_mac64) bw_geom2res4.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFGetParams.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFGetHeader.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFGetSensors.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFGetChannelData.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFGetChannelLabels.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFEpochDs.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_CTFChangeHeadPos.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_getCTFData.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_filter.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_combineDs.cc $(CTF_LIB)/ctflib_maci64.o
+	$(mex_mac64) bw_kit2res4.cc $(CTF_LIB)/ctflib_maci64.o
+
+	$(mex_mac64) bw_CTFGetAverage.cc $(CTF_LIB)/ctflib_maci64.o $(BW_LIB)/bwlib_maci64.o
+	$(mex_mac64) bw_makeVS.cc $(CTF_LIB)/ctflib_maci64.o $(BW_LIB)/bwlib_maci64.o
+	$(mex_mac64) bw_makeEventRelated.cc $(CTF_LIB)/ctflib_maci64.o $(BW_LIB)/bwlib_maci64.o
+	$(mex_mac64) bw_makeDifferential.cc $(CTF_LIB)/ctflib_maci64.o $(BW_LIB)/bwlib_maci64.o
+	$(mex_mac64) bw_computeFaceNormals.cc
+	$(mex_mac64) bw_CTFWriteMRI.cc $(CTF_LIB)/ctflib_maci64.o
+
+	$(mex_mac64) trilinear.cpp
+
+	mv *.mexmac* ../
