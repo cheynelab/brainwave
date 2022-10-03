@@ -1,0 +1,21 @@
+Disclaimers and Terms of Use:
+ 
+
+This software has been developed in the laboratory of Dr. Douglas Cheyne at  the Hospital for Sick Children Research Institute supported by grants from the Canadian Institutes of Health Research.  Work published using these programs should cite the following publications:
+
+
+For event-related beamforming:
+
+Cheyne D., Bakhtazad L. and Gaetz W.  (2006) Spatiotemporal mapping of cortical activity accompanying  voluntary movements using an event-related beamforming approach.  Human Brain Mapping 27: 213-229.
+
+Cheyne D., Bostan AC., Gaetz W, Pang EW. (2007) Event-related beamforming: A robust method for  presurgical functional mapping using MEG. Clinical Neurophysiology 118: 1691-1704. 
+
+
+For differential beamformer (SAM) images:
+
+Robinson, S. and Vrba J. (1999).  Functional neuroimaging by synthetic aperture magnetometry.  In: Nenonen J, Ilmoniemi RJ, Katila T, (Eds)  Biomag 2000: Proceedings of the 12th International Conference on Biomagnetism. pp. 302-305.
+
+
+This software is provided free of charge for RESEARCH USE ONLY and is NOT APPROVED FOR CLINICAL USE. Please do not distribute this software without permission.  Although these programs have been carefully tested prior to release, they are provided "as is" with no guarantee and are to be used at the user's own risk.  To request changes or report any bugs please contact douglas.cheyne@utoronto.ca. 
+
+Copyright (c) Douglas Cheyne, PhD, Hospital for Sick Children. All rights reserved.
