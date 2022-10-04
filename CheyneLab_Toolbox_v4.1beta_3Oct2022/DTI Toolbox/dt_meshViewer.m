@@ -115,7 +115,7 @@ function dt_meshViewer(meshFile, overlayFiles)
     uimenu(FILE_MENU,'label','Load Surfaces ...','Callback',@LOAD_MESH_CALLBACK);    
     TEMPLATE_MENU = uimenu(FILE_MENU,'label','Load Template');  
     uimenu(TEMPLATE_MENU,'Label','Freesurfer (fsaverage)', 'Callback',@LOAD_FSAVERAGE_CALLBACK);
-    uimenu(TEMPLATE_MENU,'Label','MNI Colin-27 (CH2)', 'Callback',@LOAD_TEMPLATE_CALLBACK);
+%     uimenu(TEMPLATE_MENU,'Label','MNI Colin-27 (CH2)', 'Callback',@LOAD_TEMPLATE_CALLBACK);
     uimenu(FILE_MENU,'label','Import Surfaces ...','separator','on','Callback',@IMPORT_MESH_CALLBACK);    
     uimenu(FILE_MENU,'label','Close','Callback','closereq','Accelerator','W','separator','on');    
 
@@ -413,12 +413,12 @@ function dt_meshViewer(meshFile, overlayFiles)
             set(FILE_TEXT,'string',s);     
         end
     
-        function LOAD_TEMPLATE_CALLBACK(~,~)
-            meshFile = sprintf('%s%stemplates%sCH2%sCH2_MRI%sFS_SURFACES.mat',DT_PATH,filesep,filesep,filesep,filesep);
-            loadMesh(meshFile);      
-            s = sprintf('Template: Colin-27');
-            set(FILE_TEXT,'string',s);     
-        end   
+%         function LOAD_TEMPLATE_CALLBACK(~,~)
+%             meshFile = sprintf('%s%stemplates%sCH2%sCH2_MRI%sFS_SURFACES.mat',DT_PATH,filesep,filesep,filesep,filesep);
+%             loadMesh(meshFile);      
+%             s = sprintf('Template: Colin-27');
+%             set(FILE_TEXT,'string',s);     
+%         end   
     
         function LOAD_FSAVERAGE_CALLBACK(~,~)
             meshFile = sprintf('%s%stemplates%sfsaverage%sfsaverage6%sFS_SURFACES.mat',DT_PATH,filesep,filesep,filesep,filesep);
