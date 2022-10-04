@@ -6,7 +6,7 @@ function brainwave
     
     s = which('brainwave');
     [tpath,~,~] = fileparts(s);
-    bw_path = strcat(tpath,filesep,'BrainWave Toolbox 4.0');
+    bw_path = strcat(tpath,filesep,'BrainWave_Toolbox_4.0');
     addpath(bw_path);
     bw_main_menu      % this adds all other paths needed
     
